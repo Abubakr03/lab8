@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorAccent">
+
+
+    <EditText
+        android:id="@+id/edit_search"
+        android:layout_width="351dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/edit_style"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Поиск по Имя"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="348dp"
+        android:layout_height="62dp"
+        android:layout_alignStart="@+id/edit_search"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="103dp"
+        android:text="Поиск"
+        android:textColor="#ffff"
+        android:background="@drawable/button_style"/>
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="343dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/button_search"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="172dp"
+        android:text="Добавить пользователь"
+        android:textColor="#ffff"
+        android:background="@drawable/button_style"/>
+
+    <ListView
+        android:id="@+id/list_user"
+        android:layout_width="match_parent"
+        android:layout_height="327dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp" />
+
+</RelativeLayout>
